@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="et.lnk" type="image/x-icon">
+    <title>Personalizando links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color: rgb(250, 16, 145);
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        a:visited{
+            color: rgb(241, 55, 195);
+            
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: rgb(227, 243, 9);
+        }
+        .especial{
+            background-color:rgb(172, 106, 235);
+        }
+        .especial::before{
+            content: '⇒';
+        }
+        .especial::after{
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Pamelaamo08" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCuVH8gnLwMQ-i-hm_Kd0dtg" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.youtube.com/shorts/IupuJ1M_gs0">Video/Conteúdo</a></li>
+    </ul>
+    
+</body>
+</html>
