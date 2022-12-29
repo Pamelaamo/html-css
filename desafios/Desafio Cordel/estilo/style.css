@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+
+    --fonte2:
+
+    --fonte3:
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,17 +20,24 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
+    
+    
+   
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    
+    
 }
 
 header > p {
@@ -33,6 +52,7 @@ header a, footer a {
 
 header a:hover, footer a:hover {
     text-decoration: underline;
+
 }
 
 section {
@@ -40,6 +60,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    
 }
 
 section.normal {
