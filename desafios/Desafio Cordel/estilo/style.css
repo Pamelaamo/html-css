@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family= Inconsolata & display = swap');
 
 
 :root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-
-    --fonte2:
-
-    --fonte3:
-
+    --fonte1: 'Sevillana', cursiva;
+    --fonte2: Georgia, 'Times New Roman', Times, serif;
+    --fonte3: 'Inconsolata', monoespaçado;
 }
 
 * {
@@ -20,10 +20,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
-    font-family: var(--fonte1);
-    
-    
-   
+
 }
 
 header {
@@ -36,6 +33,9 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    
     
     
 }
@@ -60,6 +60,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
+    
     
 }
 
@@ -71,11 +74,14 @@ section.normal {
 section.imagem {
     background-color: rgb(155, 67, 67);
     color: white;
+    font-family: var(--fonte3)
 }
 
-section.imagem > p{
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.384);
-    width: 400px;
+    
 }
 
 footer {
