@@ -61,9 +61,11 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte1);
-    font-size: 3.5vw;
-    
-    
+    font-size: 3.5vw; 
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -84,6 +86,15 @@ section.imagem > p {
     
 }
 
+
+section#img01 {
+    background-image: '#img01';
+}
+
+section#img02 {
+
+
+}
 footer {
     background-color: black;
     color: white;
