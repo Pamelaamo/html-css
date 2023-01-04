@@ -76,23 +76,31 @@ section.normal {
 section.imagem {
     background-color: rgb(155, 67, 67);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616);
+    background-attachment: fixed;
     font-family: var(--fonte3)
+    
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.651);
+    text-shadow: 1px 1px 0px black;
     
 }
 
 
 section#img01 {
-    background-image: '#img01';
+    background-image: url('../imagens/clarice.webp');
+    background-position: center;
+    background-size: cover;
 }
 
 section#img02 {
-
+    background-image: url('../imagens/clarice-lispector.jpg');
+    background-position: center;
+    background-size: cover;
 
 }
 footer {
