@@ -5,15 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        td.fnum {
+            text-align: center;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
-         Anatonia para tabelas grandes
+         Anatomia para tabelas grandes
          table
-            thead (dentro dele eu posso ter - tr, td, th)
-            tbody (dentro dele eu posso ter - tr, td, th)
-            tfoot (dentro dele eu posso ter - tr, td, th)
+            thead (dentro dele eu posso ter - tr, td, th) - CABEÇA
+            tbody (dentro dele eu posso ter - tr, td, th) - CORPO
+            tfoot (dentro dele eu posso ter - tr, td, th) - PÉ
     -->
     
 
@@ -21,21 +50,56 @@
         <thead>
         <tr>
             <th>LISTA DE MERCADO</th>
-            <th>Preços</th>
+            <th>PREÇOS</th>
         </tr>
         </thead>
 
         <tbody>
             <tr>
                 <td>Maça gala</td>
-                <td> 5,98 kg</td>
+                <td class="num"> R$ 5,98 kg</td>
+            </tr>
+
+            <tr>
+                <td>Banana nanina</td>
+                <td class="num"> R$ 4,55 kg</td>
+            </tr>
+
+            <tr>
+                <td>Laranja</td>
+                <td class="num"> R$ 3,79 kg</td>
+            </tr>
+
+            <tr>
+                <td>Uva verde</td>
+                <td class="num"> R$ 8,50 kg</td>
+            </tr>
+
+            <tr>
+                <td>Graviola</td>
+                <td class="num"> R$ 15,33 kg</td>
+            </tr>
+
+            <tr>
+                <td>Morango</td>
+                <td class="num"> R$ 12,00 cx</td>
+            </tr>
+
+            <tr>
+                <td>Manga</td>
+                <td class="num"> R$ 7,88 kg</td>
+            </tr>
+
+            <tr>
+                <td>Tangerina</td>
+                <td class="num"> R$ 6,85 kg</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>TOTAL DE PRODUTOS</th>
-                <td>0000</td>
+                <th>TOTAL</th>
+                <td class="fnum"> <strong>R$ 64,88</strong></td>
             </tr>
         </tfoot>
     </table>
